@@ -1,4 +1,6 @@
-assert myFunction.sum_array([1,2,3,4,5]) == [15], 'incorrect'
+
+
+
 assert myFunction.sum_array([2,4,6]) == [12], 'incorrect'
 assert myFunction.sum_array(3,-1,0) == [2], 'incorrect'
 assert myFunction.fibonacci(1) == [1], 'incorrect'

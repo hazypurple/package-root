@@ -80,7 +80,7 @@ def quick_sort(items):
         elif i == pivot:
             middle.append(i)
 
-    start = quick_sort(small)
-    end = quick_sort(large)
+    start = quick_sort(start)
+    end = quick_sort(end)
 
     return start + middle + end

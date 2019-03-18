@@ -8,12 +8,11 @@ def sum_array(array):
     Returns:
         int: the result of the sum of the itmes in the array
     """
-    if len(array) <= 1:
-        return array
+
+    if len(array) == 0:
+        return 0
     else:
-        array[-2] = array[-1] + array[-2]
-        array.pop()
-        return sum_array(array)
+        return array[0] + sum_array(array[1:])
 
 
 def fibonacci(n):
@@ -33,7 +32,7 @@ def fibonacci(n):
     if n <= 1:
         return n
     else:
-        return fibonnacci (n-1) + fibonnacci(n-2)
+        return fibonacci (n-1) + fibonacci(n-2)
 
 def factorial(n):
     """Return n!
